@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<process.h>
+
+typedef struct linkList{
+
+    int info;
+    struct linkList *next;
+} node;
+
+void crateLinkList(node **head);
+void traverseInOrder(node *head);
+void traverseInReverseOrder(node *head);
+node *searchInUnorderedList(node *head, int item);
+void auxilliarySearch(node *head, node **ploc, node **loc, int item);
+void insertAtBeginning(node **head, int item);
+void insertAfterElement(node *head, int item, int after);
+void deletefromBeginning(node **head);
+void deleteFromEnd(node **head);
+void deleteAfterElement(node *head, int after);
+void revesreList(node **head);
+void deleteList(node **head);
